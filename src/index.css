@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'sefer-font', sans-serif;
+  font-size: 13px;
+  line-height: 1.846;
+  color: #666666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0C497A;
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
+p {
+  font-size: 14px;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
