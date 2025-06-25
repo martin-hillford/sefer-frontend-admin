@@ -1,5 +1,6 @@
-import { IdParam, JumbotronLayout, Loading } from 'sefer/components';
+import { JumbotronLayout, Loading } from 'sefer/components';
 import { Education } from 'sefer/icons';
+import { IdParam } from 'components';
 import { CurriculumWithRevisions } from 'types/data/curricula/Revision';
 import { useCurriculumWithRevision } from './useCurriculumWithRevision';
 import { Properties } from './Properties';

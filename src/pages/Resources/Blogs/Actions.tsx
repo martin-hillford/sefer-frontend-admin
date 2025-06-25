@@ -49,7 +49,7 @@ export const Action = (props: { blog: Blog | undefined, refresh: () => void }) =
   }
 
   const onViewStats = () => navigate(`/stats/blogs/${blog.id}`);
-
+  
   return (
     <ButtonGroup $pull="right">
       <Button onClick={edit} icon={<Pencil size={13} />} />

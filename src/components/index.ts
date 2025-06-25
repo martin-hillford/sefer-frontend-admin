@@ -22,3 +22,5 @@ export { UserBlockButton } from './UserBlockButton';
 export { ContentBlockTypeLabel } from './ContentBlockTypeLabel'
 export { BlockLabel } from './BlockLabel'
 export { NavigationProvider } from './NavigationProvider'
+export { LanguageDropDown } from './LanguageDropDown'
+export { IdParam } from './IdParam'

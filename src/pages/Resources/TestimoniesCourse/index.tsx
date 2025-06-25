@@ -1,6 +1,6 @@
-import { Container, Header, IdParam, JumbotronLayout, Loading } from 'sefer/components';
+import { Container, Header, JumbotronLayout, Loading } from 'sefer/components';
+import { IdParam, Testimonies } from 'components';
 import { MegaPhone } from 'sefer/icons';
-import { Testimonies } from 'components';
 import { Course } from 'types/data/Course';
 import { Testimony } from 'types/data/resources/Testimony';
 import { useTestimonies } from './useTestimonies';
@@ -8,7 +8,7 @@ import { useFetchCourseById } from 'hooks/useFetchCourseById';
 import { useLocalization } from 'sefer/hooks/useLocalization';
 import { localization } from './localization';
 
-const Index = () => (
+export default () => (
   <IdParam fallback="/content/testimonies/" onId={courseId => <Page courseId={courseId} />} />
 );
 
@@ -42,5 +42,3 @@ const Content = (props : { course : Course | undefined | null, testimonies : Tes
     </Container>
   );
 };
-
-export default Index;

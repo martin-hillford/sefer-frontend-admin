@@ -1,4 +1,5 @@
-import { IdParam, JumbotronLayout } from 'sefer/components';
+import { JumbotronLayout } from 'sefer/components';
+import { IdParam } from 'components';
 import { Education } from 'sefer/icons';
 import { MentorStudents } from 'types/data/users/MentorStudents';
 import { Content } from './Content';

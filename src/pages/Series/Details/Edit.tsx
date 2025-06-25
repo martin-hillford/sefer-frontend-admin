@@ -1,4 +1,4 @@
-import { IdParam } from 'sefer/components';
+import { IdParam } from 'components';
 import { Main } from './Main';
 
 export default () => (

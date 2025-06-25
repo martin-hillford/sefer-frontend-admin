@@ -1,4 +1,5 @@
-import { Container, IdParam, JumbotronLayout, Loading } from 'sefer/components';
+import { Container, JumbotronLayout, Loading } from 'sefer/components';
+import { IdParam } from 'components';
 import { Grid } from 'sefer/icons';
 import { BlogWithContent } from 'types/data/resources/BlogWithContent';
 import { htmlToText } from 'util/html';
@@ -10,6 +11,9 @@ import { localization } from './localization';
 const EditBlog = () => <IdParam fallback="/content/blogs" onId={id => <LoadBlog id={id} />} />;
 
 const LoadBlog = ({ id } : {id : number}) => {
+
+  console.log("edit blog");
+
   const blog = useEditBlog(id);
   const terms = useLocalization(localization);
 

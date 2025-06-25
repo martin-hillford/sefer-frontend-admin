@@ -13,7 +13,10 @@ const EditTestimony = React.lazy(() => import('../pages/Resources/Testimony/Edit
 const CreateTestimony = React.lazy(() => import('../pages/Resources/Testimony/CreateTestimony'));
 const Testimonies = React.lazy(() => import('../pages/Resources/Testimonies'));
 const TestimoniesOverall = React.lazy(() => import('../pages/Resources/TestimoniesOverall'));
-const TestimoniesCourse = React.lazy(() => import('../pages/Resources/TestimoniesCourse/Index'));
+const TestimoniesCourse = React.lazy(() => import('../pages/Resources/TestimoniesCourse'));
+
+const Templates = React.lazy(() => import('../pages/Resources/Templates'));
+const EditTemplate = React.lazy(() => import('../pages/Resources/EditTemplate'));
 
 const Router = () => (
   <Suspense fallback={null}>
@@ -29,6 +32,8 @@ const Router = () => (
       <Route path="pages/create" element={<CreatePage />} />
       <Route path="pages/:id" element={<EditPage />} />
       <Route path="pages" element={<Pages />} />
+      <Route path="templates" element={<Templates />} />
+      <Route path="templates/edit" element={<EditTemplate />} />
       <Route path="*" element={<Navigate replace to="/dashboard" />} />
     </Routes>
   </Suspense>

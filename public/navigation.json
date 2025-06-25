@@ -55,7 +55,8 @@
     "links" : [
       { "href" : "/content/blogs", "name" : { "en" : "Blogs", "nl" :"Blogs" } },
       { "href" : "/content/pages", "name" : { "en" : "Pages", "nl" :"Pagina's" } },
-      { "href" : "/content/testimonies", "name" : { "en" : "Testimonies", "nl" :"Getuigenissen" } }
+      { "href" : "/content/testimonies", "name" : { "en" : "Testimonies", "nl" :"Getuigenissen" } },
+      { "href" : "/content/templates", "name" : { "en" : "Templates", "nl" :"Templates" } }
     ],
     "location": "up"
   },

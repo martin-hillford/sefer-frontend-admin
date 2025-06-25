@@ -1,4 +1,5 @@
-import { Container, Header, IdParam, JumbotronLayout, Loading } from 'sefer/components';
+import { Container, Header, JumbotronLayout, Loading } from 'sefer/components';
+import { IdParam } from 'components';
 import { MegaPhone } from 'sefer/icons';
 import { Course } from 'types/data/Course';
 import { Testimony } from 'types/data/resources/Testimony';

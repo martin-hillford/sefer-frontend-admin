@@ -1,4 +1,5 @@
-import { Container, IdParam, JumbotronLayout, Loading } from 'sefer/components';
+import { Container, JumbotronLayout, Loading } from 'sefer/components';
+import { IdParam } from 'components';
 import { Grid } from 'sefer/icons';
 import { useEnvironmentSites } from 'hooks/useSites';
 import { useState } from 'react';
