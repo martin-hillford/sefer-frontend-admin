@@ -11,10 +11,10 @@ export const getConfiguration = async () => {
 
 export type Config = {
     api: string;
-    statsApi: string;
     language: string;
     publicSite: string;
     environment: string;
+    editor?: { type: string, url: string, class: string, color: string }[] | undefined
 }
 
 const fetchConfiguration = async () => {

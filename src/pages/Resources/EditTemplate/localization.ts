@@ -8,7 +8,8 @@ export const localization = {
     layoutName: "Layout",
     language: "Taal",
     type: "Type",
-    name: "Naam"
+    name: "Naam",
+    back: "Terug"
   },
   en: {
     templates: "Templates",
@@ -19,6 +20,7 @@ export const localization = {
     layoutName: "Layout",
     language: "Language",
     type: "Type",
-    name: "Name"
+    name: "Name",
+    back: "Back"
   }
 }

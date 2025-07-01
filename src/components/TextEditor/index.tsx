@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { Preview } from './Preview';
 import { Toolbar } from './Toolbar';
+import { useInlineParser } from 'hooks/useInlineParser';
 
 type CursorPosition = { start: number; end: number; }
 
@@ -12,6 +13,7 @@ type TextEditorProps = {
 }
 
 export const TextEditor = (props : TextEditorProps) => {
+  const inline = useInlineParser();
   const { content, setContent } = props;
 
   const [position, setPosition] = useState<CursorPosition>({ start: 0, end: 0 });
@@ -36,6 +38,7 @@ export const TextEditor = (props : TextEditorProps) => {
     .replace('\r\n', '\n')
     .replace('\n\r', '\n');
 
+  if(inline === undefined) return null;
   return (
     <Wrapper>
       <Panel $withPreview={showPreview}>
@@ -52,6 +55,7 @@ export const TextEditor = (props : TextEditorProps) => {
           onCursorMove={setPosition}
           value={value}
           onChange={setContent}
+          inline={inline}
         />
       </Panel>
       <Preview withPreview={showPreview} content={content} />

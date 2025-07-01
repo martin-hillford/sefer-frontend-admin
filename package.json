@@ -2,7 +2,7 @@
   "name": "@martin-hillford/sefer-admin",
   "version": "0.2.1",
   "dependencies": {
-    "@martin-hillford/markdown-ts-react": "1.0.3",
+    "@martin-hillford/markdown-ts-react": "1.0.6",
     "@microsoft/signalr": "^8.0.7",
     "echarts": "^5.6.0",
     "react": "^19.1.0",
