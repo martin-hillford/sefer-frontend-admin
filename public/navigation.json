@@ -1,0 +1,99 @@
+[
+  {
+    "id" : "dashboard",
+    "name" : { "en" : "Dashboard", "nl" :"Dashboard" },
+    "icon" : "stats",
+    "href" : "/dashboard",
+    "location": "up"
+  },
+  {
+    "id" : "education",
+    "name" : { "en" : "Education", "nl" :"Onderwijs" },
+    "icon" : "education",
+    "links" : [
+      { "href" : "/courses", "name" : { "en" : "Courses", "nl" :"Cursussen" } },
+      { "href" : "/curricula", "name" : { "en" : "Curricula", "nl" :"Curriculums" } },
+      { "href" : "/series", "name" : { "en" : "Series", "nl" :"Series" } }
+    ],
+    "location": "up"
+  },
+  {
+    "id" : "enrollments",
+    "name" : { "en" : "Enrollments", "nl" :"Inschrijvingen" },
+    "icon" : "pencil",
+    "links" : [
+      { "href" : "/enrollments", "name" : { "en" : "Enrollments", "nl" :"Active Inschrijvingen" } },
+      { "href" : "/enrollments/verify", "name" : { "en" : "Verification", "nl" :"Verifiëren" } },
+      { "href" : "/enrollments/feedback", "name" : { "en" : "Feedback", "nl" :"Feedback" } }
+    ],
+    "location": "up"
+  },
+  {
+    "id" : "users",
+    "name" : { "en" : "Users", "nl" :"Gebruikers" },
+    "icon" : "user",
+    "links" : [
+      { "href" : "/users", "name" : { "en" : "All Users", "nl" :"Alle gebruikers" } },
+      { "href" : "/users/students", "name" : { "en" : "Students", "nl" :"Studenten" } },
+      { "href" : "/users/mentors", "name" : { "en" : "Mentors", "nl" :"Mentoren" } },
+      { "href" : "/users/supervisors", "name" : { "en" : "Supervisors", "nl" :"Supervisors" } },
+      { "href" : "/users/administrators", "name" : { "en" : "Administrators", "nl" :"Beheerders" } }
+    ],
+    "location": "up"
+  },
+  {
+    "id" : "files",
+    "name" : { "en" : "Files", "nl" :"Bestanden" },
+    "icon" : "file",
+    "href" : "/files",
+    "location": "up"
+  },
+  {
+    "id" : "content",
+    "name" : { "en" : "Content", "nl" : "Content" },
+    "icon" : "grid",
+    "links" : [
+      { "href" : "/content/blogs", "name" : { "en" : "Blogs", "nl" :"Blogs" } },
+      { "href" : "/content/pages", "name" : { "en" : "Pages", "nl" :"Pagina's" } },
+      { "href" : "/content/testimonies", "name" : { "en" : "Testimonies", "nl" :"Getuigenissen" } },
+      { "href" : "/content/templates", "name" : { "en" : "Templates", "nl" :"Templates" } }
+    ],
+    "location": "up"
+  },
+  {
+    "id" : "settings",
+    "name" : { "en" : "Settings", "nl" : "Instellingen" },
+    "icon" : "settings",
+    "links" : [
+      { "href" : "/settings/config", "name" : { "en" : "Website configuration", "nl" :"Website configuratie" } },
+      { "href" : "/settings/diagnostics", "name" : { "en" : "Diagnostics", "nl" :"Diagnose" } },
+      { "href" : "/settings/logs", "name" : { "en" : "Logs", "nl" :"Logs" } },
+      { "href" : "/settings/regions", "name" : { "en" : "Sites & Regions", "nl" :"Sites & Regio's" } },
+      { "href" : "/settings/profile", "name" : { "en" : "Profile", "nl" :"Profiel" } },
+      { "href" : "/settings/password", "name" : { "en" : "Password", "nl" :"Wachtwoord" } },
+      { "href" : "/settings/security", "name" : { "en" : "Security", "nl" :"Beveiliging" } }
+    ],
+    "location": "up"
+  },
+  {
+    "id" : "messages",
+    "name" : { "en" : "Messages", "nl" : "Berichten" },
+    "icon" : "message",
+    "href" : "/messages",
+    "location": "down"
+  },
+  {
+    "id" : "home",
+    "name" : { "en" : "Home", "nl" : "Home" },
+    "icon" : "home",
+    "href" : "/home",
+    "location": "down"
+  },
+  {
+    "id" : "logout",
+    "name" : { "en" : "Logout", "nl" :"Uitloggen" },
+    "icon" : "logout",
+    "href" : "/logout",
+    "location": "down"
+  }
+]

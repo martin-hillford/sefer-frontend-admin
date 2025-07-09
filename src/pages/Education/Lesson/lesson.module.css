@@ -1,0 +1,22 @@
+.blockSettingsButtons {
+    svg {
+        margin-top: -6px;
+    }
+}
+
+
+.summaryHeader {
+    display: flex;
+    color: black;
+    background-color: white;
+    justify-content: space-between;
+    padding: 15px;
+    height: 55px;
+    line-height: 25px;
+    margin: -15px -15px -15px;
+}
+
+.summaryHeaderExtended {
+    background-color: #F5F5F5 !important;
+    margin: -15px -15px 15px !important;
+}

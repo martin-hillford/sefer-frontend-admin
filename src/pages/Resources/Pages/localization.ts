@@ -1,0 +1,40 @@
+export const localization = {
+  nl: {
+    removePage: "Pagina verwijderen",
+    deleteButtonText: "Verwijderen",
+    deletingPage: "De pagina wordt verwijderd, een moment geduld aub.",
+    deletingContent: "De pagina wordt verwijderd, een moment geduld alstublieft.",
+    deletedContent: "De pagina is verwijderd.",
+    deleteHeader: "Pagina verwijderen",
+    deleteConfirmation: "Weet u zeker dat u deze pagina wilt verwijderen? Dit kan niet ongedaan gemaakt worden!",
+    deleteButton: "Verwijderen",
+    pagesTitle: "Pagina's",
+    pagesSubtitle: "Informeren & uitleggen",
+    noPagesFoundHeader: "Pagina's",
+    noPagesFoundContent: "Geen pagina's gevonden in het systeem.",
+    specialPages: "Speciale pagina's",
+    menuPages: "Menu pagina's",
+    separatePages: "Losse pagina's",
+    savingMenuOrder: "De volgorde van het menu wordt opgeslagen, een ogenblik geduld a.u.b.",
+    menuOrderSaved: "De volgorde van het menu is opgeslagen."
+  },
+  en: {
+    deletingContent: "The page is being deleted, please wait a moment.",
+    deletedContent: "The page has been deleted.",
+    deleteHeader: "Delete Page",
+    deleteConfirmation: "Are you sure you want to delete this page? This cannot be undone!",
+    deleteButton: "Delete",
+    removePage: "Delete page",
+    deleteButtonText: "Delete",
+    deletingPage: "The page is being deleted, please wait a moment.",
+    pagesTitle: "Pages",
+    pagesSubtitle: "Inform and explain",
+    noPagesFoundHeader: "Pages",
+    noPagesFoundContent: "No pages found in the system.",
+    specialPages: "Special pages",
+    menuPages: "Menu pages",
+    separatePages: "Separate pages",
+    savingMenuOrder: "The menu order is being saved, please wait a moment.",
+    menuOrderSaved: "The menu order has been saved."
+  }
+};

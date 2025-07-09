@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'sefer-font';
+    src: url("../fonts/montserrat/montserrat-extra-bold.otf") format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sefer-font';
+    src: url("../fonts/montserrat/montserrat-bold.otf") format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sefer-font';
+    src: url("../fonts/montserrat/montserrat-bold.otf") format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sefer-font';
+    src: url("../fonts/montserrat/montserrat-semi-bold.otf") format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sefer-font';
+    src: url("../fonts/montserrat/montserrat-regular.otf") format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sefer-font';
+    src: url("../fonts/montserrat/montserrat-regular.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sefer-font';
+    src: url("../fonts/montserrat/montserrat-light.otf") format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sefer-font';
+    src: url("../fonts/montserrat/montserrat-extra-light.otf") format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}

@@ -1,0 +1,16 @@
+{
+    "eslint.format.enable": false,
+    "eslint.lintTask.enable": true,
+    "eslint.probe": [
+        "typescript",
+        "typescriptreact",
+        "mdx",
+        "markdown"
+    ],
+    "eslint.useFlatConfig": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+    "cSpell.language": "en,nl"
+}
