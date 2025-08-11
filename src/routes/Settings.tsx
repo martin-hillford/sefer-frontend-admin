@@ -8,6 +8,7 @@ const Password = React.lazy(() => import('../pages/Settings/Password/Index'));
 const Security = React.lazy(() => import('../pages/Settings/Security'));
 const Regions = React.lazy(() => import('../pages/Settings/Regions'));
 const Logs = React.lazy(() => import('../pages/Settings/Logs/Index'));
+const Log = React.lazy(() => import('../pages/Settings/Log'));
 const Sites = React.lazy(() => import('../pages/Settings/Sites'));
 const PushNotifications = React.lazy(() => import('../pages/Settings/PushNotifications'));
 
@@ -22,6 +23,7 @@ const Router = () => (
       <Route path="sites" element={<Sites />} />
       <Route path="password" element={<Password />} />
       <Route path="security" element={<Security />} />
+      <Route path="logs/:id" element={<Log />} />
       <Route path="logs" element={<Logs />} />
       <Route path="*" element={<Navigate replace to="/settings/config" />} />
     </Routes>

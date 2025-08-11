@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Log from './Log';
 import { useLocalization } from 'sefer/hooks/useLocalization';
 import { localization } from './localization';
+import { useNavigate } from 'react-router-dom';
 
 export default (props : { logs: Log[] | undefined | null}) => {
   const { logs } = props;
@@ -28,8 +29,9 @@ export default (props : { logs: Log[] | undefined | null}) => {
 
 const LogDetails = (props : { log: Log}) => {
   const { log } = props;
+  const navigate = useNavigate();
   return (
-    <tr>
+    <tr onClick={() => navigate(`/settings/logs/${log.id}`)}>
       <td aria-label="timestamp"><DateTimeLabel value={log.timestamp} /></td>
       <td aria-label="log-level">{log.logLevel}</td>
       <td aria-label="category-name">{reduce(log.categoryName)}</td>
@@ -42,9 +44,10 @@ const Table = styled.table`
     width:100%;
 
     th { text-align: left;}
+    tr { cursor: pointer;}
 `;
 
-const reduce = (categoryName: string) => replacements[categoryName] ?? categoryName;
+export const reduce = (categoryName: string) => replacements[categoryName] ?? categoryName;
 
 const replacements = {
   'Sefer.Web.Notifications.Mail.NotificationServiceProcessor': 'Notifications',
