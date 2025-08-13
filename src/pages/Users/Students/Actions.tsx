@@ -1,7 +1,7 @@
 import { Button, ButtonGroup } from 'sefer/components';
 import { Student } from 'types/data/users/Student';
 import { ActivateUserButton, ChangeRoleButton, MessageButton, UserBlockButton } from 'components';
-import { UserRole } from 'sefer/Data/UserRole';
+import { UserRole } from 'sefer/data/UserRole';
 import { useLocalization } from 'sefer/hooks/useLocalization';
 import { localization } from './localization';
 

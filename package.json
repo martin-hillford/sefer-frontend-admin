@@ -34,9 +34,9 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build --outDir ./build",
+    "build": "tsc && vite build --outDir ./dist",
     "lint": "eslint .",
-    "post-build": "gzip -k build/assets/*.js && gzip -k build/styles/*.css"
+    "pre-docker": "gzip -k dist/assets/*.js && gzip -k dist/styles/*.css && rm dist/config.json"
   },
   "browserslist": {
     "production": [

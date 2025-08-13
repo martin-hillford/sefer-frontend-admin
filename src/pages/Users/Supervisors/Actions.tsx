@@ -3,7 +3,7 @@ import { Education } from 'sefer/icons';
 import { MessageButton, UserBlockButton } from 'components';
 import { Supervisor } from 'types/data/users/Supervisor';
 import { ChangeRoleButton } from 'components/ChangeRoleButton';
-import { UserRole } from 'sefer/Data/UserRole';
+import { UserRole } from 'sefer/data/UserRole';
 import { useLocalization } from 'sefer/hooks/useLocalization';
 import { localization } from './localization';
 

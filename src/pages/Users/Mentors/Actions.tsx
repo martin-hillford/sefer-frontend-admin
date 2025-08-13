@@ -2,7 +2,7 @@ import { Button, ButtonGroup } from 'sefer/components';
 import { Education } from 'sefer/icons';
 import { ChangeRoleButton, MessageButton } from 'components';
 import { User } from 'types/data/users/User';
-import { UserRole } from 'sefer/Data/UserRole';
+import { UserRole } from 'sefer/data/UserRole';
 import { localization } from './localization';
 import { useLocalization } from 'sefer/hooks/useLocalization';
 

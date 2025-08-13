@@ -8,7 +8,7 @@ import { ChangeRoleButton } from 'components/ChangeRoleButton';
 import { ChangeRegionOrSiteButton } from './ChangeRegionOrSiteButton';
 import DisableTwoFactorAuthButton from './DisableTwoFactorAuthButton';
 import { ImpersonationButton } from './ImpersonationButton';
-import { UserRole } from 'sefer/Data/UserRole';
+import { UserRole } from 'sefer/data/UserRole';
 
 interface Props {
   onRegionOrSiteChanged : (region: Region, site: Site) => void
