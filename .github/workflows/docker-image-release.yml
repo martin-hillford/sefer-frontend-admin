@@ -2,9 +2,9 @@ name: Build Docker Images
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "release" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "release" ]
 
 concurrency:
   group: docker-ci-${{ github.ref }}
@@ -12,7 +12,7 @@ concurrency:
 
 env:
   IMAGE: martinhillford/sefer-frontend-admin
-  VERSION: 2.1.${{ github.run_number }}
+  VERSION: 2.2.${{ github.run_number }}
 
 jobs:
   main:
@@ -51,4 +51,4 @@ jobs:
           push: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
           tags: |
             ${{ env.IMAGE }}:${{ env.VERSION }}
-            ${{ env.IMAGE }}:latest
+            ${{ env.IMAGE }}:lts
