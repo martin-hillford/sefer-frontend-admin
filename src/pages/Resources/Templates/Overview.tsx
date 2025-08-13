@@ -7,6 +7,7 @@ import { TemplateDetails } from './TemplateDetails';
 import { useLanguage } from 'sefer/hooks';
 import { AvailableLanguages } from 'components/LanguageDropDown';
 import { Pencil } from 'sefer/icons';
+import { DownloadButton } from './Download';
 
 export const Overview = (props : { templates: Array<Template & { id: string}>}) => {
   const terms = useLocalization(localization);
@@ -25,12 +26,14 @@ export const Overview = (props : { templates: Array<Template & { id: string}>}) 
     </ButtonGroup>
   )
 
+
   return (<EntitiesPanel
     data={templates}
     name="templates"
     onRenderItem={onRenderItem}
     header={terms.templates}
     onSelect={setSelected}
+    additionalButtons={<DownloadButton />}
   >
     <EntityForm buttons={buttons}>
       <TemplateDetails
