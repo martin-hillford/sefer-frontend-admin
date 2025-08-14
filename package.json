@@ -34,9 +34,9 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build --outDir ./dist",
+    "build": "rm -rf ./dist && tsc --noEmit && vite build --outDir ./dist",
     "lint": "eslint .",
-    "pre-docker": "gzip -k dist/assets/*.js && gzip -k dist/styles/*.css && rm -f dist/config.json"
+    "pre-docker": "gzip -k dist/assets/*.js && gzip -k dist/styles/*.css && find dist/assets dist/styles -type f -not -name '*.gz' -not -name '*.br' -exec sh -c 'brotli -f -q 11 -c \"$1\" > \"$1.br\"' _ {} \\; && rm -f dist/config.json"
   },
   "browserslist": {
     "production": [

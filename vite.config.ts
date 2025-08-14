@@ -17,7 +17,7 @@ export default defineConfig({
         }
     },
     build: {
-        sourcemap: true,
+        sourcemap: false,
         rollupOptions: {
             output: {
                 assetFileNames: 'assets/[hash][extname]',
