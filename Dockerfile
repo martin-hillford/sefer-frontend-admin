@@ -13,4 +13,3 @@ RUN npm run pre-docker
 # ---------- Stage 2: Serve with nginx ----------
 FROM docker.io/martinhillford/nginx-extended
 COPY --from=builder /app/dist /usr/share/nginx/html
-
