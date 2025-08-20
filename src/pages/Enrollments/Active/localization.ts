@@ -12,6 +12,7 @@ export const localization = {
     selfStudy: "Zelfstudie",
     mentor: "Mentor",
     lessons: "Lessen",
+    noEnrollments: "Er zijn geen actieve inschrijvingen"
   },
   en: {
     enrollments: "Enrollments",
@@ -26,5 +27,6 @@ export const localization = {
     selfStudy: "Self Study",
     mentor: "Mentor",
     lessons: "Lessons",
+    noEnrollments: "There are no active enrollments"
   },
 };

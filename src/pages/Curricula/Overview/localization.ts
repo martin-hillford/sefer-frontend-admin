@@ -13,8 +13,9 @@ export const localization = {
     deleteCurriculumConfirm: "Wilt u dit curriculum verwijderen?",
     deleteCurriculumHeader: "Curriculum verwijderen",
     deletingCurriculum: "Het curriculum wordt verwijderd, een moment geduld a.u.b.",
-    curriculumDeleted: "Het curriculum is verwijderd."
-
+    curriculumDeleted: "Het curriculum is verwijderd.",
+    noCurriculums: "Er zijn nog geen curriculums in het systeem. Maak er één aan.",
+    add: "Toevoegen"
   },
   en: {
     title: "Education",
@@ -30,6 +31,8 @@ export const localization = {
     deleteCurriculumConfirm: "Do you want to delete this curriculum?",
     deleteCurriculumHeader: "Delete curriculum",
     deletingCurriculum: "The curriculum is being deleted, please wait a moment.",
-    curriculumDeleted: "The curriculum has been deleted."
+    curriculumDeleted: "The curriculum has been deleted.",
+    noCurriculums: "There are no curriculums in the system, please add one.",
+    add: "Add"
   }
 };

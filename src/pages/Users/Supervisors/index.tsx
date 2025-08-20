@@ -1,4 +1,4 @@
-import { EntitiesNotFound, EntitiesPanel, EntityForm, JumbotronLayout } from 'sefer/components';
+import { EntitiesPanel, EntityForm, JumbotronLayout } from 'sefer/components';
 import { User as UserIcon } from 'sefer/icons';
 import { useState } from 'react';
 import UserRole from 'types/data/UserRole';
@@ -8,6 +8,7 @@ import { Actions } from './Actions';
 import { useFetchSupervisors } from './useFetchSupervisors';
 import { useLocalization } from 'sefer/hooks/useLocalization';
 import { localization } from './localization';
+import { EntitiesNotFoundLayout } from '../../../components/EntitiesNotFoundLayout';
 
 export default () => {
   const { supervisors, setSupervisors } = useFetchSupervisors();
@@ -46,9 +47,12 @@ export default () => {
     />
   );
 
+  if(supervisors?.length === 0)
+    return <EntitiesNotFoundLayout {...terms } icon={<UserIcon size={13} />} {...terms} crumbs={crumbs} />
+
+
   return (
     <JumbotronLayout icon={<UserIcon size={13} />} {...terms} crumbs={crumbs}>
-      {supervisors?.length === 0 && <EntitiesNotFound {...terms} /> }
       <EntitiesPanel<Supervisor>
         data={supervisors}
         name="supervisors"

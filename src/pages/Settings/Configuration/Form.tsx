@@ -17,23 +17,30 @@ export const Form = (props : { context : DataContext<Configuration>, admins : Us
     <>
       <Header variant="large">{terms.settings}</Header>
       <br />
-      <Header inline color={Colors.Blue} variant="large">{terms.settingsStatistics}</Header>
-      <Property label={terms.activeStudentDays}>
+      <Header inline color={Colors.Blue} variant="large">{terms.generalSettings}</Header>
+      <Property tooltip={terms.activeStudentDaysTooltip} label={terms.activeStudentDays}>
         <TextField type="number" dataContext={context} name="studentActiveDays" />
       </Property>
       <Property label={terms.autoReminderDays}>
         <TextField type="number" dataContext={context} name="studentReminderDays" />
-      </Property>
-      <br />
-      <Header inline color={Colors.Blue} variant="large">{terms.assignMentorsSettings}</Header>
-      <Property label={terms.mentorRightsDays}>
-        <TextField type="number" dataContext={context} name="sameMentorDays" />
       </Property>
       <Property label={terms.limitLessonSubmissions}>
         <Switch dataContext={context} name="isLessonSubmissionsLimited" />
       </Property>
       <Property label={terms.maxLessonsPerDay}>
         <TextField type="number" dataContext={context} name="maxLessonSubmissionsPerDay" />
+      </Property>
+
+      <br />
+      <Header inline color={Colors.Blue} variant="large">{terms.assignMentorsSettings}</Header>
+      <Property label={terms.mentorRightsDays}>
+        <TextField type="number" dataContext={context} name="sameMentorDays" />
+      </Property>
+      <Property label={terms.assignPersonalMentorOnRegistration}>
+        <Switch dataContext={context} name="assignPersonalMentorOnRegistration" />
+      </Property>
+      <Property label={terms.strictGenderAssignment}>
+        <Switch dataContext={context} name="strictGenderAssignment" />
       </Property>
       <Property label={terms.optimalAgeDifference}>
         <TextField type="number" dataContext={context} name="optimalAgeDifference" />

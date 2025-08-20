@@ -1,4 +1,4 @@
-import { Button, EntitiesNotFound, EntitiesPanel, EntityForm, JumbotronLayout } from 'sefer/components';
+import { Button, EntitiesPanel, EntityForm, JumbotronLayout } from 'sefer/components';
 import { Stats, User as UserIcon } from 'sefer/icons';
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -9,6 +9,7 @@ import { Details } from './Details';
 import { useFetchStudents } from 'hooks/useFetchStudents';
 import { useLocalization } from 'sefer/hooks/useLocalization';
 import { localization } from './localization';
+import { EntitiesNotFoundLayout } from '../../../components/EntitiesNotFoundLayout';
 
 export default () => {
   const { students, setStudents} = useFetchStudents();
@@ -65,9 +66,11 @@ export default () => {
   const onViewStats = () => navigate('/stats/students');
   const statsButton = <Button onClick={onViewStats} icon={<Stats size={18} />} />;
 
+  if(students?.length === 0)
+    return <EntitiesNotFoundLayout {...terms } icon={<UserIcon size={13} />} {...terms} crumbs={crumbs} content={terms.noEntities} />
+
   return (
     <JumbotronLayout icon={<UserIcon size={13} />} {...terms} crumbs={crumbs}>
-      { students?.length === 0 && <EntitiesNotFound header={terms.students} content={terms.noEntities} /> }
       <EntitiesPanel<Student>
         selected={selected}
         data={students}
@@ -83,4 +86,4 @@ export default () => {
       </EntitiesPanel>
     </JumbotronLayout>
   );
-};
+}

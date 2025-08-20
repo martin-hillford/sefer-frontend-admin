@@ -19,6 +19,7 @@ export const localization = {
     more: "Meer",
     all: "Alle",
     enrollments: "Inschrijvingen",
+    noFeedback: "Er is geen feedback om te verwerken"
   },
   en: {
     incomingFeedback: "Incoming feedback",
@@ -40,5 +41,6 @@ export const localization = {
     more: "More",
     all: "All",
     enrollments: "Enrollments",
+    noFeedback: "There is no feedback to process."
   },
 };

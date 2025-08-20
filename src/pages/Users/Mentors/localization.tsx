@@ -1,6 +1,7 @@
 export const localization = {
   nl : {
     users: "Gebruikers",
+    header: "Mentoren",
     mentors: "Mentoren",
     title: "Mentorenbeheer",
     subTitle: "Accounts & cursussen",
@@ -22,6 +23,7 @@ export const localization = {
   },
   en : {
     users: "Users",
+    header: "Mentors",
     mentors: "Mentors",
     title: "Mentor management",
     subTitle: "Accounts & courses",

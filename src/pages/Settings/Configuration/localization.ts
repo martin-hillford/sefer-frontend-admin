@@ -2,6 +2,7 @@ export const localization = {
   nl: {
     settings: "Instellingen",
     websiteConfiguration: "Website Configuratie",
+    generalSettings: "Algemene instellingen",
     configuration: "Configuratie",
     settingsAndData: "instellingen & gegevens",
     settingsStatistics: "Instelling statistieken",
@@ -14,12 +15,14 @@ export const localization = {
     optimalAgeDifference: "Gewenst leeftijdsverschil (jaren)",
     availabilityWeighting: "% Weging beschikbaarheid",
     ageDifferenceWeighting: "% Weging leeftijdsverschil",
+    assignPersonalMentorOnRegistration: "Permanente persoonlijke mentor",
     backupMentor: "Reserve mentor",
     savingSettings: "De instellingen worden opgeslagen, een moment geduld a.u.b.",
     savedSettings: "De instellingen zijn opgeslagen.",
     save: "Opslaan",
     mentors: "Mentoren",
     noEntities: "Geen entiteiten gevonden",
+    strictGenderAssignment: "Alleen hetzelfde geslacht",
     studentActiveDaysRequired: 'Geef het aantal dagen dat een student actief blijft na uitloggen op.',
     studentActiveDaysRange: 'Het aantal dagen dat een student actief blijft na uitloggen dient tussen de 1 en de 120 te liggen.',
     studentReminderDaysRequired: 'Geef het aantal dagen waarna een automatische herinnering wordt gestuurd naar de student op.',
@@ -31,11 +34,13 @@ export const localization = {
     optimalAgeDifferenceRequired: 'Geef het gewenste aantal jaren tussen de student en mentor op.',
     optimalAgeDifferenceRange: 'Het gewenste aantal jaren tussen de student en mentor dient tussen de 0 en 255 te liggen.',
     relativeAvailabilityFactorRequired: 'Geeft het beschikbaarheidsweging percentage op.',
-    relativeAvailabilityFactorRange: 'Het beschikbaarheidsweging percentage dient tussen 0 en 100 te liggen.'
+    relativeAvailabilityFactorRange: 'Het beschikbaarheidsweging percentage dient tussen 0 en 100 te liggen.',
+    activeStudentDaysTooltip: "Bepaald hoeveel dagen na de laatste activiteit de student nog als actief wordt gezien."
   },
   en: {
     settings: "Settings",
     websiteConfiguration: "Website Configuration",
+    generalSettings: "General Settings",
     configuration: "Configuration",
     settingsAndData: "settings & data",
     settingsStatistics: "Settings statistics",
@@ -44,6 +49,7 @@ export const localization = {
     assignMentorsSettings: "Assign mentors settings",
     mentorRightsDays: "Right to mentor (days)",
     limitLessonSubmissions: "Limit lesson submissions",
+    assignPersonalMentorOnRegistration: "Permanent personal mentor",
     maxLessonsPerDay: "Maximum lessons per day",
     optimalAgeDifference: "Desired age difference (years)",
     availabilityWeighting: "% Availability weighting",
@@ -54,6 +60,7 @@ export const localization = {
     save: "Save",
     mentors: "Mentors",
     noEntities: "No entities found",
+    strictGenderAssignment: "Strict gender for mentors",
     studentActiveDaysRequired: 'Enter the number of days a student remains active after logging out.',
     studentActiveDaysRange: 'The number of days a student remains active after logging out must be between 1 and 120.',
     studentReminderDaysRequired: 'Enter the number of days after which an automatic reminder is sent to the student.',
@@ -65,6 +72,7 @@ export const localization = {
     optimalAgeDifferenceRequired: 'Enter the desired number of years between the student and mentor.',
     optimalAgeDifferenceRange: 'The desired number of years between the student and mentor must be between 0 and 255.',
     relativeAvailabilityFactorRequired: 'Enter the availability weighting percentage.',
-    relativeAvailabilityFactorRange: 'The availability weighting percentage must be between 0 and 100.'
+    relativeAvailabilityFactorRange: 'The availability weighting percentage must be between 0 and 100.',
+    activeStudentDaysTooltip: "Define the number of days for which a student, after his last activity on website is still count as being active."
   }
 }

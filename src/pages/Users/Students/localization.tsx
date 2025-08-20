@@ -1,6 +1,7 @@
 export const localization = {
   nl : {
     users: "Gebruikers",
+    header: "Studenten",
     students: "Studenten",
     title: "Studentenbeheer",
     subTitle: "accounts & inschrijvingen",
@@ -20,6 +21,7 @@ export const localization = {
   en : {
     users: "Users",
     students: "Students",
+    header: "Students",
     title: "Student management",
     subTitle: "accounts & enrollments",
     noEntities: "There are currently no students present in the system",

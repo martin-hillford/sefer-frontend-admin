@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Cards, Container, Header, Line, Loading } from 'sefer/components';
+import { Button, ButtonGroup, Cards, Container, EntitiesNotFound, Header, Line, Loading } from 'sefer/components';
 import { SurveyResult } from 'types/data/enrollments/SurveyResult';
 import { Result } from './Result';
 import { useLocalization } from 'sefer/hooks/useLocalization';
@@ -17,6 +17,7 @@ export const Results = (props : Props) => {
   const terms = useLocalization(localization);
 
   if (!results) return <Loading variant="huge" />;
+  if (results?.length === 0) return <EntitiesNotFound header={terms.feedback} content={terms.noFeedback} />
 
   const onRender = (result : SurveyResult) => <Result onProcessed={onProcessed} result={result} />;
   return (

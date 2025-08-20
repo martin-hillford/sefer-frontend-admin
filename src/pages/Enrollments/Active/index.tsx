@@ -1,4 +1,4 @@
-import { JumbotronLayout, Loading } from 'sefer/components';
+import { EntitiesNotFound, JumbotronLayout, Loading } from 'sefer/components';
 import { Pencil } from 'sefer/icons';
 import { Mentor } from 'types/data/users/Mentor';
 import { Content } from './Content';
@@ -13,11 +13,13 @@ export default () => {
   const terms = useLocalization(localization);
   const crumbs = [{ label: terms.enrollments }];
   const loading = !mentors || !enrollments;
+  const hasEnrollments = enrollments && enrollments.length > 0
 
   return (
     <JumbotronLayout icon={<Pencil size={13} />} title={terms.enrollments} subTitle={terms.subTitle} crumbs={crumbs}>
       {loading && <Loading variant="huge" />}
-      {!loading && <Content enrollments={enrollments!} mentors={mentors!} refresh={refresh} />}
+      {!loading && !hasEnrollments && <EntitiesNotFound header={terms.enrollments} content={terms.noEnrollments} />}
+      {!loading && hasEnrollments && <Content enrollments={enrollments!} mentors={mentors!} refresh={refresh} />}
     </JumbotronLayout>
   );
 };

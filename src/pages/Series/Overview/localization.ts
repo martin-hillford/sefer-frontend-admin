@@ -30,7 +30,9 @@ export const localization = {
     description: "Omschrijving",
     published: "Gepubliceerd",
     inProgress: 'De volgorde van de series wordt opgeslagen, een moment geduld a.u.b.',
-    completed: 'De volgorde van de series is opgeslagen.'
+    completed: 'De volgorde van de series is opgeslagen.',
+    noSeries: "Er zijn nog geen series in het systeem. Maak er één aan.",
+    add: "Toevoegen"
   },
   en: {
     education: "Education",
@@ -63,6 +65,8 @@ export const localization = {
     description: "Description",
     published: "Published",
     inProgress: 'The order of the series is being saved, please wait a moment.',
-    completed: 'The order of the series has been saved.'
+    completed: 'The order of the series has been saved.',
+    noSeries: "There are no series in the system, please add one.",
+    add: "Add"
   }
 };

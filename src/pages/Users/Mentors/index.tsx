@@ -1,4 +1,4 @@
-import { EntitiesNotFound, EntitiesPanel, EntityForm, JumbotronLayout } from 'sefer/components';
+import { EntitiesPanel, EntityForm, JumbotronLayout } from 'sefer/components';
 import { User as UserIcon } from 'sefer/icons';
 import { useState } from 'react';
 import UserRole from 'types/data/UserRole';
@@ -8,6 +8,7 @@ import { Details } from './Details';
 import { useLocalization } from 'sefer/hooks/useLocalization';
 import { localization } from './localization';
 import { useGetWithState } from 'sefer-fetch';
+import { EntitiesNotFoundLayout } from '../../../components/EntitiesNotFoundLayout';
 
 export default () => {
   const terms = useLocalization(localization);
@@ -36,10 +37,12 @@ export default () => {
     setSelected(undefined);
   };
 
+  if(mentors?.length === 0)
+    return <EntitiesNotFoundLayout {...terms } icon={<UserIcon size={13} />} {...terms} crumbs={crumbs} content={terms.noEntities} />
+
   const buttons = <Actions user={selected} onRoleChanged={onRoleChanged} />;
   return (
     <JumbotronLayout icon={<UserIcon size={13} />} {...terms} crumbs={crumbs}>
-      { mentors?.length === 0 && <EntitiesNotFound header={terms.mentors} content={terms.noEntities} /> }
       <EntitiesPanel<Mentor>
         data={mentors}
         name="mentors"

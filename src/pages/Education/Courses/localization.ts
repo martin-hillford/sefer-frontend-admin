@@ -28,7 +28,9 @@ export const localization = {
     maxLessonSubmissions: "Max. lessen per dag",
     isVideoCourse: "Video cursus",
     private: "Verborgen",
-    showOnHomepage: "Op homepage"
+    showOnHomepage: "Op homepage",
+    noCourses: "Er zijn nog geen cursussen in het systeem. Maak er één aan.",
+    add: "Toevoegen"
   },
   en : {
     title: "Education",
@@ -59,6 +61,8 @@ export const localization = {
     maxLessonSubmissions: "Max. submissions per day",
     isVideoCourse: "Video course",
     private: "Private",
-    showOnHomepage: "Show on homepage"
+    showOnHomepage: "Show on homepage",
+    noCourses: "There are no courses in the system, please add one.",
+    add: "Add"
   }
 }

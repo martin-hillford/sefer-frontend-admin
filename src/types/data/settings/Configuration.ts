@@ -9,5 +9,7 @@ export type Configuration = {
     sameMentorDays: number;
     studentActiveDays: number;
     studentReminderDays: number;
+    assignPersonalMentorOnRegistration: boolean;
+    strictGenderAssignment: boolean;
 }
 
