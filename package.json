@@ -9,7 +9,7 @@
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2",
     "sefer": "npm:@martin-hillford/sefer-admin-components@1.1.58",
-    "sefer-chat": "npm:@martin-hillford/sefer-chat@1.0.8",
+    "sefer-chat": "npm:@martin-hillford/sefer-chat@1.1.1",
     "sefer-fetch": "npm:@martin-hillford/sefer-fetch@1.0.9",
     "styled-components": "^6.1.18"
   },

@@ -3,6 +3,7 @@ import { useAdminFrontendConfig } from 'hooks/useAdminFrontendConfig';
 import { VerificationResult } from 'types/data/enrollments/VerificationResult';
 import { useLocalization } from 'sefer/hooks/useLocalization';
 import { localization } from './localization';
+import { useLanguage } from 'sefer/hooks';
 
 export const Result = (props : { result? : VerificationResult | undefined | null, type? : string }) => {
   const { result, type } = props;
@@ -34,6 +35,7 @@ const View = (props : { result : VerificationResult, type : string }) => {
   const { result, type } = props;
   const config = useAdminFrontendConfig();
   const terms = useLocalization(localization);
+  const language = useLanguage();
   return (
     <>
       <Property label={terms.type}>{type}</Property>
@@ -41,7 +43,7 @@ const View = (props : { result : VerificationResult, type : string }) => {
       <Property label={terms.student}>{result.details.student.name}</Property>
       <Property label={terms.date}><DateLabel value={result.details.closureDate} /></Property>
       <ButtonGroup $pull="right">
-        <Button href={`${config?.api}${result.details.diplomaUrl}`} variant="primary">
+        <Button href={`${config?.api}${result.details.diplomaUrl}/${language}`} variant="primary">
           {type}
         </Button>
       </ButtonGroup>

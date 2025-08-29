@@ -3,17 +3,19 @@ import { BaseLayout, Loading, NoScrollLayout } from 'sefer/components';
 import { MessageAdmin } from 'sefer/icons';
 import { useUserContext } from 'context/UserContext';
 import { useNavigate, useParams } from 'react-router-dom';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
 import useAdminChannel from './useAdminChannel';
 import { useAvailableLanguage } from 'sefer/hooks/useAvailableLanguage';
 import { theme } from './theme';
 import { localization } from './localization';
+import { useFetchContext } from 'sefer-fetch';
 
 export default () => {
   const { userId } = useParams<{ userId : string | undefined }>();
   const channel = useAdminChannel(userId);
   const navigate = useNavigate();
   const { user } = useUserContext();
+  const fetchContext = useFetchContext()
   const language = useAvailableLanguage();
   const culture = language === 'nl' ? 'nl-NL' : 'en-US';
   const terms = localization[language];
@@ -25,7 +27,6 @@ export default () => {
   return (
     <BaseLayout crumbs={crumbs} title={terms.messages} subTitle={terms.contactAndSupport} icon={<MessageAdmin size={13} />}>
       <Container>
-        <ThemeProvider theme={theme}>
           <Chat
             initialChannelId={channel?.id}
             minWidthForComposedView={800}
@@ -34,8 +35,10 @@ export default () => {
             user={user}
             navigate={navigate}
             showBackToDashboard={false}
+            markMessageAsReadDelay={2500}
+            fetchContext={fetchContext}
+            theme={theme}
           />
-        </ThemeProvider>
       </Container>
     </BaseLayout>
   );

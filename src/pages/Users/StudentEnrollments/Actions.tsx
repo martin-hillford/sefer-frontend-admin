@@ -7,6 +7,7 @@ import { RetakeButton } from './RetakeButton';
 import { ChangeMentorButton } from 'components/ChangeMentorButton';
 import { useLocalization } from 'sefer/hooks/useLocalization';
 import { localization } from './localization';
+import { useLanguage } from 'sefer/hooks';
 
 interface Props {
   enrollment: Enrollment,
@@ -17,13 +18,14 @@ interface Props {
 export const Actions = (props: Props) => {
   const { enrollment, onEnrollmentChanged } = props;
   const config = useAdminFrontendConfig();
+  const language = useLanguage();
   const terms = useLocalization(localization);
   return (
     <ButtonGroup $pull="right">
       <Button
         show={enrollment.hasDiploma}
         target="_blank"
-        href={`${config?.api}${enrollment?.diplomaUrl}`}
+        href={`${config?.api}${enrollment?.diplomaUrl}/${language}`}
         label={terms.certificate}
       />
       <Button
